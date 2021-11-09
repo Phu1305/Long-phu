@@ -1,0 +1,256 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://yu.ctu.edu.vn/images/upload/article/2020/03/0305-logo-ctu.png">
+  <title>Giới thiệu</title>
+  
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+
+  :root {
+    --white: #fff;
+    --black: #000;
+    --primary: rgb(224, 247, 12);
+  }
+
+  .wide {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .background {
+    background: 
+        url("https://png.pngtree.com/thumb_back/fh260/background/20200731/pngtree-blue-carbon-background-with-sport-style-and-golden-light-image_371487.jpg");
+
+    background-size: cover;
+    background-position: center center;
+   
+  }
+
+  .img img {
+      
+    border-radius: 10px;
+  }
+  .header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header_container img {
+    max-width: 100px;
+    margin-top: 5px;
+    border-radius: 10px;
+  }
+
+  .header_nav {
+    line-height: 50px;
+  }
+
+  .header_nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-size: 15px;
+    position: relative;
+    border-radius: 5px;
+  }
+
+  .header_nav li:hover {
+    background-color: var(--primary)
+  }
+
+  .header_nav li:hover a {
+    color: var(--black)
+  }
+
+  .header_nav li .sub {
+    position: absolute;
+    background-color: var(--white);
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: none;
+    animation: identifier .7s ease;
+    transform-origin: top center;
+  }
+  .header_nav li .sub:after {
+    content: '';
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: -10px;
+  }
+
+
+  @keyframes identifier {
+    from {
+      opacity: 0;
+      transform: rotateX(90deg);
+    }
+
+    to {
+      opacity: 1;
+      transform: rotateX(0);
+    }
+  }
+  .header_nav .sub li {
+    display: block;
+    padding: 0 15px;
+  }
+  .header_nav ul li:hover .sub {
+    display: block;
+  }
+  .header_nav li a {
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    padding: 15px 10px;
+  }
+
+  .header_nav li i {
+    padding-right: 5px;
+  }
+
+  .slider {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider_container {
+    text-align: center;
+  }
+
+  .slider_container h1,
+  .slider_container h2 {
+    padding: 5px 0;
+    color: rgb(204, 252, 200);
+  }
+
+  .slider_container h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+  }
+
+  .slider_container h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+  }
+
+  .top_title {
+    text-align: center;
+    margin: 10px 0 25px 0;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: rgb(250, 248, 134);
+    
+  }
+
+  .content {
+    margin-left: 25px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .container {
+    color: var(--white);
+  }
+
+  .container .about {
+    max-width: 600px;
+    display: flex;
+    line-height: 1.5;
+    padding: 0 5px;
+    border: 2px solid var(--black);
+    padding: 15px;
+    box-shadow: rgb(138, 129, 129) 0px 0px 20px 5px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .icon img {
+    width: 40px;
+    height: 40px;
+   
+  }
+  .icon {
+    display: flex;
+    justify-content: space-between;
+  }
+
+</style>
+
+<body>
+  <div class="background">
+    <div class="wide">
+      <header>
+        <div class="header_container">
+          <div class="header_logo">
+            <a href="https://www.ctu.edu.vn/"><img src="https://yu.ctu.edu.vn/images/upload/article/2020/03/0305-logo-ctu.png" alt="Logo Đại học Cần Thơ"></a>
+          </div>
+          <nav class="header_nav">
+            <ul>
+                <li><a href="https://phu1305.github.io/Long-phu/Trang%20chu%202.html"><b>Thông tin sinh viên</b></a></li>
+                <li><a href="https://phu1305.github.io/Long-phu/Toan.html"><b>Giải phương trình bậc hai</b></a></li>
+                <li><a href="https://phu1305.github.io/Long-phu/Dothi.html"><b>Vẽ đồ thị</b></a></li>
+              </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="slider">
+        <div class="slider_container">
+          <h1>Học phần KC326</h1>
+          <h2>Công nghệ IoT và Ứng dụng</h2>
+        </div>
+      </div>
+      </div>
+      <div>
+      <h3 class="top_title">Thông tin sinh viên</h3>
+    </div>
+    <section class="wide container">
+      <div class="about">
+          
+          <div class="content">
+            <p><b>Họ & Tên:</b>&nbsp;&nbsp;&nbsp;<i>Nguyễn Long Phú</i></p>
+            <p><b>Năm sinh:</b>&nbsp;&nbsp;&nbsp; <i>13/05/2001</i></p>
+            <p><b>SĐT:</b>&nbsp;&nbsp;&nbsp;<i>0869866185</i></p>
+            <p><b>Quê quán:</b>&nbsp;&nbsp;&nbsp; <i>Bến Tre</i></p>
+            
+            <p><b>Khoa:</b>&nbsp;&nbsp;&nbsp; <i>Công Nghệ</i> </p>
+            <p><b>Ngành:</b>&nbsp; <i>Quản lý công nghiệp</i> &nbsp;&nbsp;&nbsp;<b>Khóa:</b> <i>45</i></p>
+            <p> </p>
+            <p><b>MSSV:</b> &nbsp;&nbsp;&nbsp; <i>B1905949</i> </p>
+            <p><b>Gmail:</b>&nbsp;<i><u>phub1905966@student.ctu.edu.vn</u></i>  </p>
+            <br>
+          
+            <div class="icon">
+              <a href="https://www.facebook.com/babysocu"><img src="https://www.vectorico.com/download/social_media/Facebook-Icon.png" alt="fb"></a>
+            </div>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div  class="img">
+              <img src="https://phu1305.github.io/Long-phu/Hinh1.jpg" alt="Socute" width="225px", 
+              height="325px";>
+            </div>
+      </div>
+    </section>
+<br>
+<br>
+</body>
+
+</html>
